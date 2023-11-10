@@ -83,6 +83,9 @@ $(document).ready(function() {
       $('#gameList th:nth-child(3)').on('click', function() {
         sortDataByRating();
       });
+
+      //jquery script to set custom image transition for carousel in About page
+      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 6000;
 });
 
 window.onscroll = function () { scrollFunction() };

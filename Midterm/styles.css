@@ -15,7 +15,6 @@ h2 {
   padding-bottom: 50px;
   text-align: center;
   width: fit-content;
-
 }
 
 h4 {
@@ -55,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+.custom-button {
+  background-color: #008b8b;
+  color: white;
+}
 
 .circle {
     width: 80px;
@@ -199,7 +202,6 @@ a {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-
 
 .carousel-inner .carousel-item:active {
   /* Start the shake animation and make the animation last for 0.5 seconds */
