@@ -3,6 +3,21 @@ body {
   background: radial-gradient(circle, rgba(220, 220, 220, 0.443) 0%, rgba(220, 220, 220, 0.443) 17%);
 }
 
+#gameList {
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#top {
+  background-color: darkcyan;
+}
+
+hr.rounded { /*Css for dividers*/
+  border-top: 5px solid darkcyan;
+  border-radius: 5px 5px 5px 5px;
+  width: 5%;
+}
+
 h2 {
   color: rgb(51, 51, 51);
   font-family: Impact, fantasy;
