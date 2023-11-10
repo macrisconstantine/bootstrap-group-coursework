@@ -1,28 +1,27 @@
 $(document).ready(function() {
-    // Define an array to store data
-    const data = [];
-    // const dataTable = $('#gameList').DataTable({
-    //     searching: false, // Disable search bar
-    //     paging: false, // Enable pagination
-    //     ordering: true, // Enable sorting
-    //     info: false, // Disable showing "Showing x of y entries"
-        
-    //     language: {
-    //         emptyTable: "", // Set the empty table message to an empty string
-    //         zeroRecords: ""
-    //     } 
-
-    // });
+    // Define an array to store data with default items
+    const data = [
+      { game: 'The Witcher 3', rating: 100},
+      { game: 'Super Smash Bros 64', rating: 99},
+      { game: 'Ocarina of Time', rating: 98 },
+      { game: 'Majora\'s Mask', rating: 97 },
+      { game: 'Minecraft', rating: 95},
+      { game: 'World of Warcraft', rating: 90},
+      { game: 'Counter Strike', rating: 90 },
+      { game: 'League of Legends', rating: 50}
+    ];
 
     // Select elements
     const dataForm = $('#dataForm');
     const dataList = $('#dataList');
-  
+    updateTable();
+    
     dataForm.submit(function(event) {
       event.preventDefault();
       const game = $('#game').val();
       const rating = $('#rating').val();
       data.push({ game, rating });
+      sortDataByRating();
       appendRow(data.length, game, rating);
       dataForm[0].reset();
       dataTable.clear().rows.add(data).draw();
@@ -114,5 +113,3 @@ function runningFormatter(value, row, index) {
     }
 
 
-
-// Wait for the page to load before starting the animation
