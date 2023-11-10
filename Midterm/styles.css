@@ -43,13 +43,6 @@ label {
   text-align: end;
 }
 
-.dataTables_wrapper {
-  padding: 10px;
-  border: none;
-  bottom: 0%;
-  
-}
-
 footer {
   background: rgb(212, 212, 212);
   background: radial-gradient(circle, rgba(212, 212, 212, 1) 0%, rgba(0, 0, 0, 0) 0%, rgba(51, 51, 51, 1) 0%);
@@ -58,10 +51,48 @@ footer {
   height: auto;
 }
 
-.content {
-  margin: 20px;
-  margin-right: 50px;
+a {
+  text-decoration: none;
 }
+
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    background-color: white;
+    margin-bottom: 1em;
+    z-index: 3;
+}
+
+.logo {
+  width: 10em;
+  padding-inline-end: 50%;
+  padding-top: 15%;
+}
+
+.footer-content {
+  font-size: small;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: small;
+  padding: 8px;
+}
+
+.sort-symbol {
+  font-weight: 10;
+}
+
+.content {
+  margin-bottom: 20em;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -90,7 +121,6 @@ footer {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-
 }
 
 /* Change the color of links on hover */
