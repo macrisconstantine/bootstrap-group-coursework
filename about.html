@@ -6,36 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Page linked to home page which displays info about the website creators">
   <meta name="keywords" content="about, profile, who we are, info">
-  <title>About</title>
-  <!--Linking external css file-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About</title>
+
+  <!--Linking external css files-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <!--Bottstrap CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
   <!--Linking custom external css file-->
   <link rel="stylesheet" href="styles.css">
+
   <!--Font awesome CDN-->
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
-    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous" defer></script>
-    <script src="script.js" defer></script>
+  integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <header>
-  <!--Header section-->
+  <!-- Collapsed Navigation Button -->
   <div class="dropdown" style="display: block;">
-    <button class="dropbtn" id="menu-btn" style="display: none;">Menu</button>
-    <div class="dropdown-content">
-      <a
-        href="index.html">Home</a>
-      <a class="active" href="about.html">About</a>
-    </div>
+      <button class="dropbtn" id="menu-btn" style="display: none;">Menu</button>
+      <div class="dropdown-content">
+          <!-- Navigation Links -->
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+      </div>
   </div>
+
+  <!-- Navigation Bar -->
   <div id="menu-bar" class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="about.html">About</a>
+      <!-- Navigation Links -->
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
   </div>
 </header>
 
@@ -49,13 +55,14 @@
       <br>
     </p>
   </div>
-    <!--Carousel-->
+
+  <!--Custom Carousel-->
   <div class="carousel slide d-block mx-auto"
     style="width: 80%; height: auto; background-image: url(https://i.redd.it/llcnx7n2cwk51.gif);"
     data-bs-ride="carousel" data-bs-interval="10">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <!--initializing carousel items with properties of (d-block visible to all screen sizes, mx-auto centered within the carousel)-->
+        <!-- Initializing carousel items with properties of (d-block visible to all screen sizes, mx-auto centered within the carousel) -->
         <img id="tt" class="d-block mx-auto w-10" style="width: 25%; height: auto;"
           src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/85ecb141-03fd-4ccb-83dc-445d8251229c/d32r0jp-32154107-ef4a-470c-ad52-f0d26b0e2d40.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg1ZWNiMTQxLTAzZmQtNGNjYi04M2RjLTQ0NWQ4MjUxMjI5Y1wvZDMycjBqcC0zMjE1NDEwNy1lZjRhLTQ3MGMtYWQ1Mi1mMGQyNmIwZTJkNDAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.39wZcoa6NRERuXbuglDfPJuJ2HUhOWYEClAXYMNRv_4"
           alt="tiger">
@@ -68,93 +75,92 @@
     </div>
   </div>
   <br>
-  <!--Card-->
+
+  <!-- Container to hold all the cards -->
   <div class="container">
-  <div class="row"> <!--First row containing first set of cards-->
-    <div class="col">
-      <div class="col-sm mx-auto" style="width: auto;">
+    <!--First row containing first set of cards-->
+    <div class="row"> 
+      <div class="col">
+          <div class="col-sm mx-auto" style="width: auto;">
+            <div class="card">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/free-website-3582539-2991421.png?f=webp&w=256"
+                class="responsive" />
+              <div class="card-body">
+                <h3 class="card-title">Project background.</h3>
+                <p class="card-text">This project is part of our coursework for Web Development in the Fall Semester of 2023.
+                  It serves as a practical application of the knowledge and skills we've acquired in class.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-sm mx-auto" style="width: auto;">
+            <div class="card">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/free-communicate-6279912-5308092.png?f=webp&w=256"
+                class="responsive" />
+              <div class="card-body">
+                <h3 class="card-title">Contact us!</h3>
+                <p class="card-text">If you have any questions or feedback about our project, feel free to reach out to us
+                  at the contact information available at the footer of our page!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-sm mx-auto" style="width: auto;">
+            <div class="card">
+              <img src="https://cdn-icons-png.flaticon.com/512/266/266033.png" class="responsive" />
+              <div class="card-body">
+                <h3 class="card-title">Constantine Macris (252850)</h3>
+                <p class="card-text">I am a 22-year-old Information Technology Major at Deree.
+                  I love playing sports, music, and video games--sometimes I program games too : )</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row "> <!--Second row containing second set of bottom cards-->
+      <div class="col-sm mx-auto" style="width:auto;">
         <div class="card">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/free-website-3582539-2991421.png?f=webp&w=256"
+          <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/plans-7074162-5809184.png?f=webp&w=256"
             class="responsive" />
           <div class="card-body">
-            <h3 class="card-title">Project background.</h3>
-            <p class="card-text">This project is part of our coursework for Web Development in the Fall Semester of 2023.
-              It serves as a practical application of the knowledge and skills we've acquired in class.</p>
+            <h3 class="card-title">Future plans.</h3>
+            <p class="card-text">We plan to add video game entries and ratings to the list. 
+              A possible future addition could be to have each game's rating to be the average rating of multiple user votes.</p>
           </div>
         </div>
       </div>
-      <!--End of column-->
-    </div>
-    <div class="col">
       <div class="col-sm mx-auto" style="width: auto;">
         <div class="card">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/free-communicate-6279912-5308092.png?f=webp&w=256"
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-512/free-website-page-speed-optimization-calculation-seo-16-8176.png?f=webp&w=256"
             class="responsive" />
           <div class="card-body">
-            <h3 class="card-title">Contact us!</h3>
-            <p class="card-text">If you have any questions or feedback about our project, feel free to reach out to us
-              at the contact information available at the footer of our page!</p>
+            <h3 class="card-title">Our goal.</h3>
+            <p class="card-text">Our mission for this project is to complete our assignment for this Internet Programming course. We aim to
+              demonstrate our understanding of the subject matter and showcase our ability to apply the concepts we've
+              learned.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mx-auto" style="width:auto;">
+        <div id="moving-image" class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/266/266134.png" class="responsive" />
+          <div class=" card-body">
+            <h3 class="card-title">Alexandros-Gerasimos Vasilakis (228931)</h3>
+            <p class="card-text">I am a 23 year old IT major in Deree. <br>I am from the Island of Kefalonia.<br>My
+              hobbies include photography and spearfishing.</p>
           </div>
         </div>
       </div>
     </div>
-    <!--End of column-->
-    <div class="col">
-      <div class="col-sm mx-auto" style="width: auto;">
-        <div class="card">
-          <img src="https://cdn-icons-png.flaticon.com/512/266/266033.png" class="responsive" />
-          <div class="card-body">
-            <h3 class="card-title">Constantine Macris (252850)</h3>
-            <p class="card-text">I am a 22-year-old studying Information Technology at Deree.
-              I love playing sports, music, and video games--sometimes I program games too : )</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End of column-->
-  </div>
-  <!--End of row 1-->
-  <div class="row "> <!--Second row containing second set of bottom cards-->
-    <div class="col-sm mx-auto" style="width:auto;">
-      <div class="card">
-        <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/plans-7074162-5809184.png?f=webp&w=256"
-          class="responsive" />
-        <div class="card-body">
-          <h3 class="card-title">Future plans.</h3>
-          <p class="card-text">We plan to add video game entries and ratings to the list. 
-            A possible future addition could be to have each game's rating to be the average rating of multiple user votes.</p>
-        </div>
-      </div>
-    </div>
-    <!--End of column-->
-    <div class="col-sm mx-auto" style="width: auto;">
-      <div class="card">
-        <img
-          src="https://cdn.iconscout.com/icon/free/png-512/free-website-page-speed-optimization-calculation-seo-16-8176.png?f=webp&w=256"
-          class="responsive" />
-        <div class="card-body">
-          <h3 class="card-title">Our goal.</h3>
-          <p class="card-text">Our mission for this project is to complete our assignment for this Internet Programming course. We aim to
-            demonstrate our understanding of the subject matter and showcase our ability to apply the concepts we've
-            learned.</p>
-        </div>
-      </div>
-    </div>
-    <!--End of column-->
-    <div class="col-sm mx-auto" style="width:auto;">
-      <div id="moving-image" class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/266/266134.png" class="responsive" />
-        <div class=" card-body">
-          <h3 class="card-title">Alexandros-Gerasimos Vasilakis (228931)</h3>
-          <p class="card-text">I am a 23 year old IT major in Deree. <br>I am from the Island of Kefalonia.<br>My
-            hobbies include photography and spearfishing.</p>
-        </div>
-      </div>
-    </div>
-    <!--End of column-->
-  </div>
   </div>  
+
+  <!-- Custom Divider -->
   <hr class="rounded mx-auto mt-5">
+
+  <!-- Explanation of Carousel Design Choices --> 
   <div>
     <h2 class="mx-auto">Design Decisions</h2>
     <p class="mx-auto lead pb-5 ps-5 pe-5">
@@ -164,37 +170,34 @@
       To further improve this effect, we applied a custom transition time for the images and flipped the bat 180 degrees to match the direction of the forest.
     </p>
     <br><br><br>
-
   </div>
-  <!--End of row 2-->
-  <!--Card-->
+
+  <!-- Footer Section -->
   <footer class="bg-dark w-100 pt-3 footer-content" id="ff">
     <div class="container">
-        <!--Grid row-->
         <div class="row">
+            <!-- Contact Information for Alex -->
             <div class="col-auto mx-auto">
-                <!-- <p class="lead">Alex</p> -->
                 <i class="fas fa-phone"></i> +30 694 650 8357<br>
                 <i class="fa fa-envelope"></i> a.vasilakis@acg.edu <br>
-                
                 <a href="https://github.com/Alexandroas">
                     <i class="fa-brands fa-github"></i> /Alexandroas<br>
                 </a>
-                
                 <a href="https://www.instagram.com/alexandros_vasilakis/" class="me-1">
                     <i class="fab fa-instagram"></i> alexandros_vasilakis<br>
                 </a>
             </div>
             
+            <!-- Custom-made background circle to augment the logo -->
             <div class="col-auto mx-auto">
                 <div class="circle">
-                    <img class="logo"
-                        src="graphics/logo.png">
+                    <!-- Logo Image -->
+                    <img class="logo" src="graphics/logo.png">
                 </div>
             </div>
             
+            <!-- Contact Information for Costas -->
             <div class="col-auto mx-auto">
-                <!-- <p class="lead">Costas</p> -->
                 <i class="fas fa-phone"></i> +30 697 318 7491<br>
                 <i class="fa fa-envelope"></i> c.macris@acg.edu <br>
                 <a href="https://github.com/macrisconstantine" class="me-1">
@@ -206,13 +209,11 @@
             </div>
         </div>
     </div>
-<!-- Grid container -->
-<!-- Copyright -->
-<div class="text-center copyright">
-    © 2023 Copyright:
-    <a class="text-dark"></a>Alex & Costas</a>
-</div>
-<!-- Copyright -->
+
+    <!-- Copyright Information -->
+    <div class="text-center copyright">
+        © 2023 Copyright: Alex & Costas
+    </div>
 </footer>
  
 </body>
