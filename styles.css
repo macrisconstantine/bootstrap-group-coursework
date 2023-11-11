@@ -1,27 +1,32 @@
+/* Background styling for the body */
 body {
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgba(220, 220, 220, 0.443) 0%, rgba(220, 220, 220, 0.443) 17%);
 }
 
+/* Styling for the gameList table */
 #gameList {
   border-radius: 0 0 5px 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for the top row of the table */
 #top {
   background-color: darkcyan;
 }
 
-hr.rounded { /*Css for dividers*/
+/* Styling for rounded dividers */
+hr.rounded {
   border-top: 5px solid darkcyan;
   border-radius: 5px 5px 5px 5px;
   width: 5%;
 }
 
+/* Heading 2 styling */
 h2 {
   color: rgb(51, 51, 51);
   font-family: Impact, fantasy;
-  margin-bottom:10px ;
+  margin-bottom: 10px;
   font-size: 55px;
   text-shadow: #b62f2f;
   font-weight: 30;
@@ -69,20 +74,23 @@ a {
   text-decoration: none;
 }
 
+/* Custom button styling for consistent theme colors */
 .custom-button {
   background-color: #008b8b;
   color: white;
 }
 
+/* Custom circle background for logo */
 .circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 45px;
-    background-color: white;
-    margin-bottom: 1em;
-    z-index: 3;
+  width: 80px;
+  height: 80px;
+  border-radius: 45px;
+  background-color: white;
+  margin-bottom: 1em;
+  z-index: 3;
 }
 
+/* Logo styling */
 .logo {
   width: 10em;
   padding-inline-end: 50%;
@@ -93,16 +101,19 @@ a {
   font-size: small;
 }
 
+/* Copyright information styling */
 .copyright {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: small;
   padding: 8px;
 }
 
+/* Customized font 'v' instead of using icon */
 .sort-symbol {
   font-weight: 10;
 }
 
+/* Content styling to format paragraph nicely */
 .content {
   margin-bottom: 20em;
   margin-left: 10%;
@@ -110,9 +121,9 @@ a {
   width: 80%;
   text-align: center;
   justify-content: center;
-  }
+}
 
-/* Add a black background color to the top navigation */
+/* Menu bar styling */
 .topnav {
   background-color: darkcyan;
   color: #333333;
@@ -128,7 +139,7 @@ a {
   z-index: 5;
 }
 
-/* Style the links inside the navigation bar */
+/* Styling for links inside menu nav bar */
 .topnav a {
   font-family: Impact, fantasy;
   float: left;
@@ -141,23 +152,22 @@ a {
   font-size: 18px;
 }
 
-/* Change the color of links on hover */
+/* Styling for links on hover */
 .topnav a:hover {
   background-color: rgb(0, 92, 92);
   border-radius: 10px;
   color: black;
 }
 
-/* Add a color to the active/current link */
+/* Styling for the active/current link */
 .topnav a.active {
   background-color: white;
   color: #333333;
 }
 
-/* Style the counter cards */
+/* Styling for the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* this adds the "card" effect */
   padding: 16px;
   margin: 50px;
   width: auto;
@@ -167,19 +177,20 @@ a {
   background-image: url("https://static.vecteezy.com/system/resources/previews/007/423/325/original/white-gradient-stripes-wallpaper-white-and-grey-line-diagonal-background-empty-dynamic-minimal-line-pattern-blank-light-gray-futuristic-linear-banner-illustration-vector.jpg");
 }
 
+/* Styling for the card on hover */
 .card:hover {
   transform: scale(1.1);
 }
 
-.card:active { /*When card is active do: */
-  .card-body {/*Rotates text */
-    transform: rotateY(180deg); /*Flips text back 180 degrees*/
+/* Styling for the card on active state */
+.card:active {
+  .card-body {
+    transform: rotateY(180deg);
   }
-
-  transform: rotateY(180deg); /*Flips entire card 180 degrees */
+  transform: rotateY(180deg);
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
+/* Responsive columns for small screens */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -188,28 +199,29 @@ a {
   }
 }
 
+/* Responsive image styling */
 .responsive {
   align-self: center;
   width: 20%;
   height: auto;
 }
 
-
+/* Styling for the carousel */
 .carousel-inner .carousel-item {
   transition: -webkit-transform 6s ease;
   transition: transform 6s ease;
   transition: transform 6s ease, -webkit-transform 6s ease;
 }
 
+/* Styling for the carousel container */
 .carousel {
   overflow: hidden;
   box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.252);
   border-radius: 55px 55px 55px 55px;
-  ;
 }
 
+/* Styling for carousel inner container */
 .carousel-inner {
-  /*Invert bat icon*/
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -218,14 +230,13 @@ a {
   -ms-filter: "FlipH";
 }
 
+/* Styling for the carousel item on active state */
 .carousel-inner .carousel-item:active {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: tilt-shaking 0.5s;
-  /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
 
-/* Dropdown Button */
+/* Dropdown button styling */
 .dropbtn {
   background-color: darkcyan;
   color: #000000;
@@ -242,13 +253,13 @@ a {
   box-shadow: 10px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* Dropdown container styling */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown content styling */
 .dropdown-content {
   display: none;
   position: fixed;
@@ -258,7 +269,7 @@ a {
   z-index: 100;
 }
 
-/* Links inside the dropdown */
+/* Styling for links inside dropdown */
 .dropdown-content a {
   padding: 16px;
   color: black;
@@ -268,18 +279,18 @@ a {
   box-shadow: 10px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Change color of dropdown links on hover */
+/* Styling for links inside dropdown on hover */
 .dropdown-content a:hover {
   background-color: rgb(0, 92, 92);
   color: black;
 }
 
-/* Show the dropdown menu on hover */
+/* Display dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Change background color of dropdown button when dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
@@ -289,7 +300,7 @@ a {
   z-index: 100;
 }
 
-
+/* Keyframe animation for the tilt-shaking effect */
 @keyframes tilt-shaking {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
