@@ -21,8 +21,8 @@ $(document).ready(function() {
       const game = $('#game').val();
       const rating = $('#rating').val();
       data.push({ game, rating });
-      sortDataByRating();
       appendRow(data.length, game, rating);
+      sortDataByRating();
       dataForm[0].reset();
       dataTable.clear().rows.add(data).draw();
     });
@@ -107,9 +107,3 @@ function scrollFunction() {
         topnav.style.opacity=1; //and opacity to 1 to give the illsuion of a very basic animation
     }
 }
-
-function runningFormatter(value, row, index) {
-    return index+1;
-    }
-
-
